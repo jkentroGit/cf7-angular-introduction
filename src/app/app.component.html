@@ -1,4 +1,4 @@
-<div class="container mt-4">
+<!-- <div class="container mt-4">
   <div class="d-flex gap-5 fa-align-center">
     <h1>Coding Factory</h1>
     <h2>Introduction to Angular</h2>
@@ -30,7 +30,7 @@
       <td class="fw-semibold text-end">Email </td>
       <td class ps-2>{{person.email}}</td>
     </tr>
-  </table>
+  </table> -->
 
   <!-- <div class="d-flex gpa-5 text-nowrap">
     <app-person-table> </app-person-table>
@@ -44,10 +44,28 @@
     </div> -->
     
     <!-- <h4> {{ "@for" }} Directive example</h4> -->
-    <div class="d-flex flex-wrap text-nowrap gap-2">
+    <!-- <div class="d-flex flex-wrap text-nowrap gap-2">
     @for (user of users; track user) {
       <app-person-table [personInput]="user"></app-person-table>
     }
   </div>
-</div>
+</div> -->
 
+<div class="container mt-2">
+  <div class="d-flex flex-column gap-2">
+    <nav class="navbar navbar-dark bg-primary justify-content-between">
+      <a class="navbar-brand ms-3 cursor-pointer" role="button">CF7 - Angular Introduction</a>
+    </nav>
+    <div class="d-flex flex-row gap-2">
+      <div class="d-flex flex-column text-nowrap bg-light p-2">
+        <span role="button" routerLink="component-input-example">Component Input Example</span>
+        <span role="button" routerLink="for-directive-example">{{"@for"}} Directive Example</span>
+        <span role="button" routerLink="event-input-example">Event Bind Example</span>
+      </div>
+
+      <span class="flex-grow-1 p-2 text-wrap"> <router-outlet></router-outlet> </span>
+
+
+    </div>
+  </div>
+</div>
